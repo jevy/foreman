@@ -7,10 +7,6 @@ EOF
 
 end script
 
-start on (started network-interface
-          or started network-manager
-          or started networking)
+start on (started nginx)
 
-stop on (stopping network-interface
-         or stopping network-manager
-         or stopping networking)
+stop on (stopping nginx)
